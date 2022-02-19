@@ -11,7 +11,7 @@ nohup yarn start >/dev/null 2>&1 &
 
 sleep 2
 
-lighthouse http://127.0.0.1:8888 --output=json --output-path=$OUTPUT \
+lighthouse http://127.0.0.1:3000 --output=json --output-path=$OUTPUT \
 --chrome-flags="--headless" --emulated-form-factor=desktop \
 --throttling.cpuSlowdownMultiplier=1 --throttling.throughputKbps=10240 --throttling.rttMs=40
 
