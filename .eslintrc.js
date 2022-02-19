@@ -66,8 +66,11 @@ module.exports = {
     'prefer-arrow-callback': 'off',
     '@next/next/no-img-element': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
-		'react/jsx-props-no-spreading' : 'off',
-		'react/prop-types': 'off',
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] }
+    ],
+    'react/jsx-props-no-spreading': 'off',
+    'react/prop-types': 'off'
   }
 }

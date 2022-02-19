@@ -7,11 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --write .",
     "prepare": "husky install",
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
-    "format": "prettier --write .",
     "test-all": "yarn run check-format && yarn run check-lint && yarn run check-types"
   },
   "dependencies": {
@@ -20,6 +20,8 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
     "@types/node": "17.0.18",
     "@types/react": "17.0.39",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
