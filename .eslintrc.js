@@ -19,6 +19,23 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['state']
+      }
+    ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never'
+      }
+    ],
     'react/function-component-definition': [
       2,
       {
@@ -38,13 +55,6 @@ module.exports = {
     'keyword-spacing': ['error'],
     'no-extra-semi': ['error'],
     'no-restricted-exports': ['off'],
-    'no-param-reassign': [
-      'error',
-      {
-        props: true,
-        ignorePropertyModificationsFor: ['accu']
-      }
-    ],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
     'max-len': [
