@@ -19,6 +19,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    'import/no-extraneous-dependencies': ['off'],
     'no-param-reassign': [
       'error',
       {
@@ -26,16 +27,7 @@ module.exports = {
         ignorePropertyModificationsFor: ['state']
       }
     ],
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never'
-      }
-    ],
+    'import/extensions': ['off'],
     'react/function-component-definition': [
       2,
       {
