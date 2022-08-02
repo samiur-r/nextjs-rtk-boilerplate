@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import counterReducer from './counterSlice'
+import todosReducer from './todosSlice'
 
 const rootReducer = combineReducers({
-  counter: counterReducer
+  todos: todosReducer
   // add reducer here
 })
 
